@@ -97,8 +97,8 @@ footer { text-align:center; padding:10px; color:#333; font-weight:bold; font-siz
   <div class="counter" style="font-size:12px; color:#5b3a29; font-weight:bold;"></div>
   <div class="preview" style="display:flex; gap:5px; flex-wrap:wrap; margin-top:5px;"></div>
   <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:5px; margin-top:10px;">
-    <div><label>رائدة النشاط</label><input type="text"></div>
-    <div><label>مديرة المدرسة</label><input type="text"></div>
+   <div><label>رائدة النشاط : لمياء محمد العباد </label></div>
+    <div><label>مديرة المدرسة : جواهر يحيى الغامدي</label></div>
   </div>
   <button onclick="printPDF(this)">طباعة التقرير</button>
 </div>
@@ -141,8 +141,8 @@ footer { text-align:center; padding:10px; color:#333; font-weight:bold; font-siz
   <div class="counter" style="font-size:12px; color:#5b3a29; font-weight:bold;"></div>
   <div class="preview" style="display:flex; gap:5px; flex-wrap:wrap; margin-top:5px;"></div>
   <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:5px; margin-top:10px;">
-    <div><label>رائدة النشاط</label><input type="text"></div>
-    <div><label>مديرة المدرسة</label><input type="text"></div>
+    <div><label>رائدة النشاط : لمياء محمد العباد </label></div>
+    <div><label>مديرة المدرسة : جواهر يحيى الغامدي</label></div>
   </div>
   <button onclick="printPDF(this)">طباعة التقرير</button>
 </div>
@@ -185,8 +185,8 @@ footer { text-align:center; padding:10px; color:#333; font-weight:bold; font-siz
   <div class="counter" style="font-size:12px; color:#5b3a29; font-weight:bold;"></div>
   <div class="preview" style="display:flex; gap:5px; flex-wrap:wrap; margin-top:5px;"></div>
   <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:5px; margin-top:10px;">
-    <div><label>رائدة النشاط</label><input type="text"></div>
-    <div><label>مديرة المدرسة</label><input type="text"></div>
+    <div><label>رائدة النشاط : لمياء محمد العباد </label></div>
+    <div><label>مديرة المدرسة : جواهر يحيى الغامدي</label></div>
   </div>
   <button onclick="printPDF(this)">طباعة التقرير</button>
 </div>
@@ -229,8 +229,8 @@ footer { text-align:center; padding:10px; color:#333; font-weight:bold; font-siz
   <div class="counter" style="font-size:12px; color:#5b3a29; font-weight:bold;"></div>
   <div class="preview" style="display:flex; gap:5px; flex-wrap:wrap; margin-top:5px;"></div>
   <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:5px; margin-top:10px;">
-    <div><label>رائدة النشاط</label><input type="text"></div>
-    <div><label>مديرة المدرسة</label><input type="text"></div>
+    <div><label>رائدة النشاط : لمياء محمد العباد </label></div>
+    <div><label>مديرة المدرسة : جواهر يحيى الغامدي</label></div>
   </div>
   <button onclick="printPDF(this)">طباعة التقرير</button>
 </div>
@@ -411,7 +411,7 @@ function printPDF(btn){
       imagesWrapper.appendChild(img);
     });
     const activityDiv = Array.from(content.querySelectorAll('div'))
-      .find(div => div.innerHTML.includes('رائدة النشاط'));
+      .find(div => div.innerHTML.includes('رائدة النشاط : لمياء محمد العباد '));
     if (activityDiv) { content.insertBefore(imagesWrapper, activityDiv); }
   }
 
